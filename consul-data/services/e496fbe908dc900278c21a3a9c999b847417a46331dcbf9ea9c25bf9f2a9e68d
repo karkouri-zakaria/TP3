@@ -1,0 +1,1 @@
+{"Token":"","Service":{"ID":"billing-service-8084","Service":"billing-service","Tags":[],"Address":"DESKTOP-T28ER3J","Meta":{"secure":"false"},"Port":8084,"Weights":{"Passing":1,"Warning":1},"EnableTagOverride":false,"Proxy":{"Mode":"","MeshGateway":{},"Expose":{}},"Connect":{},"PeerName":"","CreateIndex":0,"ModifyIndex":0},"Source":"remote"}
