@@ -1,0 +1,25 @@
+<div class="container my-5">
+  <h3 class="mb-3">Customer ID: {{this.customerId}}</h3>
+  <table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col"><i class="bi bi-hash"></i> ID</th>
+      <th scope="col"><i class="bi bi-calendar"></i> Date</th>
+      <th scope="col"><i class="bi bi-info-circle"></i> Status</th>
+      <th scope="col"><i class="bi bi-bag-plus"></i> Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let o of orders._embedded.orders">
+      <td>{{o.id}}</td>
+      <td>{{o.createdAt | date: 'dd/MM/yy'}}</td>
+      <td>{{o.status}}</td>
+      <td>
+        <button class="btn btn-success" (click)="getOrdersDetails(o)">
+          <i class="bi bi-info-circle"></i> Orders Details
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
